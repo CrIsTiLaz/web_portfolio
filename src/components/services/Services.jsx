@@ -19,7 +19,7 @@ const Services = () => {
           <div>
             <i className="uil uil-web-grid services__icon"></i>
             <h3 className="services__title">
-              Product <br /> Designer
+              Restoring <br /> Websites
             </h3>
           </div>
 
@@ -40,41 +40,33 @@ const Services = () => {
                 className="uil uil-times services__modal-close"
               ></i>
 
-              <h3 className="services__modal-title">Product Designer</h3>
+              <h3 className="services__modal-title">Web developer</h3>
               <p className="services__modal-description">
-                Service with more than 3 years
+                I did this while working at Infobest
               </p>
 
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Web page development.</p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create ux element interaction.
+                    Restoring websites using newer technologies
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I position your company brand.
+                    Redesigned websites are:{" "}
+                    <a href="https://www.renesim.com/de/de/">Renesim</a>,
+                    <a href="https://www.metadiamonds.com">Metadiamonds</a>
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Design and mockup.</p>
+                  <p className="services__modal-info">
+                    I used React and Next.js
+                  </p>
                 </li>
               </ul>
             </div>
@@ -84,9 +76,7 @@ const Services = () => {
         <div className="services__content">
           <div>
             <i className="uil uil-arrow services__icon"></i>
-            <h3 className="services__title">
-              UI/UX <br /> Designer
-            </h3>
+            <h3 className="services__title">SQL Helper</h3>
           </div>
 
           <span onClick={() => toggleTab(2)} className="services__button">
@@ -106,41 +96,32 @@ const Services = () => {
                 className="uil uil-times services__modal-close"
               ></i>
 
-              <h3 className="services__modal-title">UI/UX Designer</h3>
+              <h3 className="services__modal-title">SQL Helper</h3>
               <p className="services__modal-description">
-                Service with more than 3 years
+                This is my bachelor's thesis
               </p>
 
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Web page development.</p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create ux element interaction.
+                    Through a web interface, various operations can be performed
+                    on the database.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I position your company brand.
+                    The application is made for SQL Server type databases..
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Design and mockup.</p>
+                  <p className="services__modal-info">
+                    It's made using .Net and React.
+                  </p>
                 </li>
               </ul>
             </div>
@@ -150,55 +131,52 @@ const Services = () => {
         <div className="services__content">
           <div>
             <i className="uil uil-edit services__icon"></i>
-            <h3 className="services__title">
-              Visual <br /> Designer
-            </h3>
+            <h3 className="services__title">Web Portfolio</h3>
           </div>
 
-          <span className="services__button">
+          <span onClick={() => toggleTab(3)} className="services__button">
             View more
             <i className="uil uil-arrow-right services__button-icon"></i>
           </span>
-          <div className="services__modal">
+          <div
+            className={
+              toggleState === 3
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
             <div className="services__modal-content">
-              <i className="uil uil-times services__modal-close"></i>
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times services__modal-close"
+              ></i>
 
-              <h3 className="services__modal-title">Visual Designer</h3>
+              <h3 className="services__modal-title">Web portfolio</h3>
               <p className="services__modal-description">
-                Service with more than 3 years
+                This is the website.
               </p>
 
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I develop the user interface.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Web page development.</p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create ux element interaction.
+                    It is a personal portfolio website.
                   </p>
                 </li>
 
                 <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
                   <p className="services__modal-info">
-                    I position your company brand.
+                    It is created using React.
                   </p>
                 </li>
 
-                <li className="services__modal-service">
+                {/* <li className="services__modal-service">
                   <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">Design and mockup.</p>
-                </li>
+                  <p className="services__modal-info">
+                    it's made using .Net and React.
+                  </p>
+                </li> */}
               </ul>
             </div>
           </div>
