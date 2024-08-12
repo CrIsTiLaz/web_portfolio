@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/web_portfolio/static/css/main.c8f53888.css",
-    "main.js": "/web_portfolio/static/js/main.f24fabf3.js",
-    "static/media/about.jpg": "/web_portfolio/static/media/about.ebc2838e756ac990da6a.jpg",
-    "static/media/profile.jpg": "/web_portfolio/static/media/profile.5d04082c12572191c2b9.jpg",
-    "static/media/CristianLazea_CV.pdf": "/web_portfolio/static/media/CristianLazea_CV.82e5b48b3a874975ec68.pdf",
+    "main.css": "/web_portfolio/static/css/main.50a32559.css",
+    "main.js": "/web_portfolio/static/js/main.6b2e7929.js",
+    "static/media/CristianLazea_CV.pdf": "/web_portfolio/static/media/CristianLazea_CV.3a24acad888e879a9060.pdf",
+    "static/media/about.jpg": "/web_portfolio/static/media/about.1fe959aa3f0983bfee20.jpg",
+    "static/media/profile.jpg": "/web_portfolio/static/media/profile.1fe959aa3f0983bfee20.jpg",
     "index.html": "/web_portfolio/index.html",
-    "main.c8f53888.css.map": "/web_portfolio/static/css/main.c8f53888.css.map",
-    "main.f24fabf3.js.map": "/web_portfolio/static/js/main.f24fabf3.js.map"
+    "main.50a32559.css.map": "/web_portfolio/static/css/main.50a32559.css.map",
+    "main.6b2e7929.js.map": "/web_portfolio/static/js/main.6b2e7929.js.map"
   },
   "entrypoints": [
-    "static/css/main.c8f53888.css",
-    "static/js/main.f24fabf3.js"
+    "static/css/main.50a32559.css",
+    "static/js/main.6b2e7929.js"
   ]
 }
