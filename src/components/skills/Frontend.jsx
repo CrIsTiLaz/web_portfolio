@@ -9,26 +9,42 @@ const Frontend = () => {
       <div className="skills__box">
         <div className="skills__group">
           <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
+            <i
+              class="bx bx-badge-check"
+              style={{ fontSize: "1.5rem", color: "var(--title-color)" }}
+            ></i>
             <div>
               <h3 className="skills__name">JavaScript</h3>
-              <span className="skills__level">Intermediate</span>
             </div>
           </div>
 
           <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
+            <i
+              class="bx bx-badge-check"
+              style={{ fontSize: "1.5rem", color: "var(--title-color)" }}
+            ></i>{" "}
             <div>
               <h3 className="skills__name">GIT</h3>
-              <span className="skills__level">Advanced</span>
             </div>
           </div>
 
           <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
+            <i
+              class="bx bx-badge-check"
+              style={{ fontSize: "1.5rem", color: "var(--title-color)" }}
+            ></i>{" "}
             <div>
               <h3 className="skills__name">React</h3>
-              <span className="skills__level">Intermediate</span>
+            </div>
+          </div>
+
+          <div className="skills__data">
+            <i
+              class="bx bx-badge-check"
+              style={{ fontSize: "1.5rem", color: "var(--title-color)" }}
+            ></i>{" "}
+            <div>
+              <h3 className="skills__name">Next js</h3>
             </div>
           </div>
         </div>

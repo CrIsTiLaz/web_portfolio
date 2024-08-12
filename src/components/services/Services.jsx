@@ -17,6 +17,69 @@ const Services = () => {
       <div className="services__container container grid">
         <div className="services__content">
           <div>
+            <i className="uil uil-edit services__icon"></i>
+            <h3 className="services__title">Programed</h3>
+          </div>
+
+          <span onClick={() => toggleTab(3)} className="services__button">
+            View more
+            <i className="uil uil-arrow-right services__button-icon"></i>
+          </span>
+          <div
+            className={
+              toggleState === 3
+                ? "services__modal active-modal"
+                : "services__modal"
+            }
+          >
+            <div className="services__modal-content">
+              <i
+                onClick={() => toggleTab(0)}
+                className="uil uil-times services__modal-close"
+              ></i>
+
+              <h3 className="services__modal-title">Programed website</h3>
+              <p className="services__modal-description">
+                Check this ->{" "}
+                <a
+                  href="https://progra-med.ro/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Programed
+                </a>
+              </p>
+
+              <ul className="services__modal-services grid">
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    It is a web platform aimed at helping users schedule
+                    appointments with doctors online.
+                  </p>
+                </li>
+
+                <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    Provides features such as: viewing doctor feedback and
+                    pricing
+                  </p>
+                </li>
+
+                {/* <li className="services__modal-service">
+                  <i className="uil uil-check-circle services__modal-icon"></i>
+                  <p className="services__modal-info">
+                    it's made using .Net and React.
+                  </p>
+                </li> */}
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="services__content">
+          <div>
             <i className="uil uil-web-grid services__icon"></i>
             <h3 className="services__title">
               Restoring <br /> Websites
@@ -97,9 +160,6 @@ const Services = () => {
               ></i>
 
               <h3 className="services__modal-title">SQL Helper</h3>
-              <p className="services__modal-description">
-                This is my bachelor's thesis
-              </p>
 
               <ul className="services__modal-services grid">
                 <li className="services__modal-service">
@@ -123,60 +183,6 @@ const Services = () => {
                     It's made using .Net and React.
                   </p>
                 </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        <div className="services__content">
-          <div>
-            <i className="uil uil-edit services__icon"></i>
-            <h3 className="services__title">Web Portfolio</h3>
-          </div>
-
-          <span onClick={() => toggleTab(3)} className="services__button">
-            View more
-            <i className="uil uil-arrow-right services__button-icon"></i>
-          </span>
-          <div
-            className={
-              toggleState === 3
-                ? "services__modal active-modal"
-                : "services__modal"
-            }
-          >
-            <div className="services__modal-content">
-              <i
-                onClick={() => toggleTab(0)}
-                className="uil uil-times services__modal-close"
-              ></i>
-
-              <h3 className="services__modal-title">Web portfolio</h3>
-              <p className="services__modal-description">
-                This is the website.
-              </p>
-
-              <ul className="services__modal-services grid">
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    It is a personal portfolio website.
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    It is created using React.
-                  </p>
-                </li>
-
-                {/* <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    it's made using .Net and React.
-                  </p>
-                </li> */}
               </ul>
             </div>
           </div>
