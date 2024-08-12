@@ -6,7 +6,6 @@ const Header = () => {
   return (
     <header className="header">
       <nav className="nav container">
-        {/* <a href="index.html" className="nav__logo">Lazea</a> */}
         <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
           <ul className="nav__list grid">
             <li className="nav__item">
@@ -28,8 +27,8 @@ const Header = () => {
             </li>
 
             <li className="nav__item">
-              <a href="#services" className="nav__link">
-                <i className="uil uil-briefcase nav__icon"></i>Portfolio
+              <a href="#portfolio" className="nav__link">
+                <i className="uil uil-briefcase nav__icon"></i> Portfolio
               </a>
             </li>
 
@@ -39,11 +38,14 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <i
-            className="uil uil-times nav__close"
-            onClick={() => showMenu(!Toggle)}
-          ></i>
+
+          {/* Butonul pentru închiderea meniului */}
+          <button className="nav__close" onClick={() => showMenu(false)}>
+            <i className="uil uil-times"></i>
+          </button>
         </div>
+
+        {/* Butonul pentru deschiderea meniului */}
         <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
           <i className="uil uil-apps"></i>
         </div>

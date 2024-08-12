@@ -62,12 +62,38 @@
         bottom: -100%;
         left: 0;
         width: 100%;
-        background-color: var(--body-color);
+        background-color: #ffffff; /* Setați culoarea solidă dorită */
         padding: 2rem 1.5rem 4rem;
-        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15) ;
+        box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.15);
         border-radius: 1.5rem 1.5rem 0 0;
         transition: .3s;
     }
+    .nav__close {
+        position: absolute;
+        right: 3.5rem !important; /* Mută butonul mai spre stânga */
+    bottom: 3.4rem !important; /* Mută butonul mai sus */
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: var(--title-color);
+        background: none;
+        border: none;
+        outline: none;
+        display: none; /* Ascundem butonul implicit */
+    }
+    
+    /* Arătăm butonul de închidere doar când meniul este deschis */
+    
+    
+    
+    .nav__close:hover {
+        color: var(--title-color-dark);
+    }
+    
+    /* Arătăm butonul de închidere doar când meniul este deschis */
+    .show-menu .nav__close {
+        display: block;
+    }
+    
 
     .show-menu{
         bottom: 0;
@@ -109,6 +135,7 @@
 @media screen and (max-width: 350px){
     .nav__menu {
         padding: 2rem 0.25rem 4rem;
+        background-color: #ffffff;
     }
 
     .nav__list {
